@@ -1,0 +1,44 @@
+{
+  "feedback": [
+    {
+      "id": "1",
+      "text": "This company is worst ever I have worked with.",
+      "rating": 2
+    },
+    {
+      "id": "2",
+      "text": "Great company to work with. Good perks.",
+      "rating": 4
+    },
+    {
+      "id": "3",
+      "text": "Awesome salary. Good work culture. Great Management.",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "text": "Good Salary but work culture is not good. Stressed out work life",
+      "rating": 3
+    },
+    {
+      "id": "6",
+      "rating": 5,
+      "text": "This company gives RSU. Go for it."
+    },
+    {
+      "id": "5",
+      "rating": 4,
+      "text": "Good work culture. Seniors are helpful. Fast paced technological growth."
+    },
+    {
+      "id": "dd03",
+      "text": "madambo khusshh huaaa",
+      "rating": 2
+    },
+    {
+      "id": "fae6",
+      "text": "ami ek rickshawala. Amar du bela vaate katche vela.",
+      "rating": 3
+    }
+  ]
+}
