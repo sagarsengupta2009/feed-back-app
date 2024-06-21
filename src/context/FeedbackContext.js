@@ -27,6 +27,11 @@ export const FeedbackProvider = ({ children }) => {
         })
     }
 
+    //To update existing edited feedback
+    const updateFeedback = (id, updatedItem) => {
+        setFeedback(feedback.map(item => item.id === id ? {...item, ...updatedItem} : item));
+    }
+
     const deleteFeedback = (id) => {
         if (window.confirm("Areyou sure you want to delete?")) {
             setFeedback(feedback.filter(item => item.id !== id));
@@ -38,6 +43,7 @@ export const FeedbackProvider = ({ children }) => {
         deleteFeedback,
         addFeedback, 
         editFeedback,
+        updateFeedback,
         feedbackEdit
     }}>
         {children}
