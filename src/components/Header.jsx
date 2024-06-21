@@ -1,4 +1,3 @@
-import React from 'react'
 import PorpTypes from 'prop-types';
 
 function Header({text, bgColor, txtColor}) {
