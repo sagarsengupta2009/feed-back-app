@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
 
+const dbServerPort = 'http://localhost:5000';
 const FeedbackContext = createContext();
 
 export const FeedbackProvider = ({ children }) => {
@@ -12,7 +13,7 @@ export const FeedbackProvider = ({ children }) => {
 
     //To get all the feedbacks when page loads
     const fetchFeedback = async () => {
-        const response = await fetch(`/feedback?_sort=id&_order=desc`);
+        const response = await fetch(`${dbServerPort}/feedback?_sort=id&_order=desc`);
         const data = await response.json();
         setTimeout(() => {
             setFeedback(data);
@@ -29,7 +30,7 @@ export const FeedbackProvider = ({ children }) => {
 
     //To add feedback
     const addFeedback = async (newFeedback) => {
-        const response = await fetch(`/feedback`, {
+        const response = await fetch(`${dbServerPort}/feedback`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -50,7 +51,7 @@ export const FeedbackProvider = ({ children }) => {
 
     //To update existing edited feedback
     const updateFeedback = async (id, updatedItem) => {
-        const response = await fetch(`/feedback/${id}`, {
+        const response = await fetch(`${dbServerPort}/feedback/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -64,7 +65,7 @@ export const FeedbackProvider = ({ children }) => {
     //To Delete feedback
     const deleteFeedback = async (id) => {
         if (window.confirm("Areyou sure you want to delete?")) {
-            await fetch(`/feedback/${id}`, { method: 'Delete' });
+            await fetch(`${dbServerPort}/feedback/${id}`, { method: 'Delete' });
             setFeedback(feedback.filter(item => item.id !== id));
         }        
     }
