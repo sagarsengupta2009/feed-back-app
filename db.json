@@ -16,14 +16,9 @@
       "rating": 5
     },
     {
-      "id": "4",
-      "text": "Good Salary but work culture is not good. Stressed out work life",
-      "rating": 3
-    },
-    {
-      "id": "6",
-      "rating": 5,
-      "text": "This company gives RSU. Go for it."
+      "text": "Good Salary but work culture is not good. Stressed out work life. Huge politics and no appreciation.",
+      "rating": 4,
+      "id": "4"
     },
     {
       "id": "5",
@@ -31,14 +26,9 @@
       "text": "Good work culture. Seniors are helpful. Fast paced technological growth."
     },
     {
-      "id": "dd03",
-      "text": "madambo khusshh huaaa",
-      "rating": 2
-    },
-    {
       "id": "fae6",
-      "text": "ami ek rickshawala. Amar du bela vaate katche vela.",
-      "rating": 3
+      "text": "ami ek rickshawala. Amar du bela vaate katche ebong vasche vela.",
+      "rating": 4
     }
   ]
 }
